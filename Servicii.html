@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS%20fisiere/styles.css">
+    <link rel="stylesheet" href="/CSS%20fisiere/cssPaginaServicii.css">
+    <title>Servicii</title>
+</head>
+<body>
+
+<div id="header"></div>
+
+<section class="servicii-oferite">
+    <h2 class="section-title">Servicii oferite</h2>
+    <p class="section-description">Estates oferă servicii pe raza întregului județ Bihor</p>
+
+    <div class="row">
+        <div class="card">
+            <img src="/src/PozeServicii/1.png" alt="Contract de Închiriere">
+            <h3>Contract de Închiriere</h3>
+            <p>Te ajutăm să găsești chirie sau chiriași, în funcție de nevoile tale</p>
+            <a href="Contract de Inchiriere.html" class="details-button">Detalii</a>
+        </div>
+        <div class="card">
+            <img src="/src/PozeServicii/2.png" alt="Tranzacționare Proprietăți">
+            <h3>Tranzacționare Proprietăți</h3>
+            <p>Fie că vinzi, cumperi sau închiriezi noi te ajutăm</p>
+            <button class="details-button">Detalii</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <img src="/src/PozeServicii/3.png" alt="Consultanță">
+            <h3>Consultanță</h3>
+            <p>Găsim planul de acțiune potrivit pentru tine</p>
+            <button class="details-button">Detalii</button>
+        </div>
+        <div class="card">
+            <h3>Servicii Speciale</h3>
+            <p>Deoarece știm că unii clienți pot avea cerințe specifice, avem opțiunea de servicii speciale. Contactați-ne pentru mai multe detalii.</p>
+            <button class="details-button">Detalii</button>
+        </div>
+    </div>
+
+    <p class="section-description">Echipa noastră de experti se asigură că fiecare serviciu oferit este potrivit cerințelor tale și munca depusă de noi este la cel mai înalt standard</p>
+</section>
+
+<div id="footer"></div>
+<script>
+    fetch('/HTML-reutilizabil/Header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('/HTML-reutilizabil/Footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+</body>
+</html>

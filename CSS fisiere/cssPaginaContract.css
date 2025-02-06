@@ -1,0 +1,55 @@
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: justify;
+    max-width: 600px;
+    font-size: 1.5rem;
+    margin-bottom: 2.5%;
+    margin-left: 5%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: justify;
+}
+
+.service h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.service p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+main {
+    padding: 40px;
+    text-align: justify;
+}

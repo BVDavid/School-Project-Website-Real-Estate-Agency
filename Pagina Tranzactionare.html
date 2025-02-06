@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS%20fisiere/styles.css">
+    <link rel="stylesheet" href="/CSS%20fisiere/cssPaginaTranzactionare.css">
+    <title>Tranzactionare proprietati</title>
+</head>
+<body>
+
+<div id="header"></div>
+
+<main>
+    <h1>Tranzactionare proprietati</h1>
+    <h2>Ce facem mai exact?</h2>
+
+    <img src="/src/PozePaginaTranzactionare/1.png" alt="Poza" />
+
+    <p>
+    Va ajutam sa  tranzactionati orice activ imobiliar, fie ca doriti sa vindeti, sa cumparati sau sa schimbati cu alta proprietate.
+    </p>
+
+    <p>
+        Aici va fi descrierea pentru acest serviciu și anume pentru serviciul de căutare chiriași pentru
+        imobilul dvs. Acest lucru îl realizăm prin publicarea de anunțuri pe site-urile de specialitate și pe
+        platforma noastră și ne ocupăm de relaționarea cu clienții pentru găsirea celei mai potrivite soluții.
+    </p>
+
+    <h3>Proprietati tranzacționate</h3>
+    <h3>3000+</h3>
+
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch('/HTML-reutilizabil/Header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('/HTML-reutilizabil/Footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS%20fisiere/styles.css">
+    <link rel="stylesheet" href="/CSS%20fisiere/cssPaginaTranzactionare.css">
+    <title>Consultanță</title>
+</head>
+<body>
+
+<div id="header"></div>
+
+<main>
+    <h1>Consultanță</h1>
+    <h2>Ce facem mai exact?</h2>
+
+    <p>
+        Vă oferim acces la studiile de piață efectuate de noi și de echipa noastră de experți. Cu ajutorul acestora vă putem explica tendințele pieței și vă putem oferi expertiza noastră cu privire la cazul dvs particular.
+    </p>
+
+    <img src="/src/PozePaginaConsultanta/1.png" alt="Poza" />
+
+    <p>
+        Vă oferim acces la baza noastră de clienti existenti si la relatiile care le avem cu alte persoane fizice si juridice pentru a solutiona mai rapid nevoile dumneavoastra. text de umplutura de aici --- de noi și de echipa noastră de experți. Cu ajutorul acestora vă putem explica tendințele pieței și vă putem oferi expertiza noastră cu privire la cazul dvs particular.    </p>
+
+
+    <img src="/src/PozePaginaConsultanta/2.png" alt="Poza" />
+
+    <p>
+        Vă oferim servicii de consultanta pentru cazul dvs particular pentru a gasi cea mai buna solutie pentru nevoile si cerintele dumneavoastra.
+    </p>
+
+    <p>
+        Nu ezitati sa ne contactacti pentru orice colaborare.
+    </p>
+
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch('/HTML-reutilizabil/Header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('/HTML-reutilizabil/Footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+</body>
+</html>

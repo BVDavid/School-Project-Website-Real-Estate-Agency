@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS%20fisiere/styles.css">
+    <link rel="stylesheet" href="/CSS%20fisiere/cssPaginaBlog.css">
+    <title>Blog</title>
+</head>
+<body>
+
+<div id="header"></div>
+
+<main class="blog-section">
+    <h1 class="blog-title">Articolele noastre</h1>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="/src/PozeBlog/1.png" alt="Plajele private" class="blog-image">
+            <div class="blog-content">
+                <span class="blog-category">Imobiliare</span>
+                <h2 class="blog-heading">Plajele private devin tot mai scumpe</h2>
+                <p class="blog-meta">Autor anonim &nbsp; August 20, 2022</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="/src/PozeBlog/2.png" alt="Oradea preia modelul" class="blog-image">
+            <div class="blog-content">
+                <span class="blog-category">Imobiliare</span>
+                <h2 class="blog-heading">Oradea preia modelul oraselor vestice</h2>
+                <p class="blog-meta">Autor anonim &nbsp; August 20, 2022</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="/src/PozeBlog/3.png" alt="Cabane de vacanta" class="blog-image">
+            <div class="blog-content">
+                <span class="blog-category">Imobiliare</span>
+                <h2 class="blog-heading">Cresterea cererii pentru cabane de vacanta</h2>
+                <p class="blog-meta">Autor anonim &nbsp; August 20, 2022</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="/src/PozeBlog/4.png" alt="Masini si preferinte" class="blog-image">
+            <div class="blog-content">
+                <span class="blog-category">Imobiliare</span>
+                <h2 class="blog-heading">Cum masinile afecteaza preferintele imobiliare</h2>
+                <p class="blog-meta">Autor anonim &nbsp; August 20, 2022</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="/src/PozeBlog/5.png" alt="Scaderea puterii de cumparare" class="blog-image">
+            <div class="blog-content">
+                <span class="blog-category">Imobiliare</span>
+                <h2 class="blog-heading">Scaderea puterii de cumparare</h2>
+                <p class="blog-meta">Autor anonim &nbsp; August 20, 2022</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="/src/PozeBlog/6.png" alt="Masini in schimbul caselor" class="blog-image">
+            <div class="blog-content">
+                <span class="blog-category">Imobiliare</span>
+                <h2 class="blog-heading">Oamenii isi cumpara masini in schimbul caselor</h2>
+                <p class="blog-meta">Autor anonim &nbsp; August 20, 2022</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch('/HTML-reutilizabil/Header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('/HTML-reutilizabil/Footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+</body>
+</html>

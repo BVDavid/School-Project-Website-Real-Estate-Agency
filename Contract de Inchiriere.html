@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS%20fisiere/styles.css">
+    <link rel="stylesheet" href="/CSS%20fisiere/cssPaginaContract.css">
+    <title>Contract de inchiriere</title>
+</head>
+<body>
+
+<div id="header"></div>
+
+<main>
+    <h1>Contract de închiriere</h1>
+    <h2>Ce facem noi pentru dumneavoastră?</h2>
+
+    <section class="service">
+        <h3>1. Căutăm chiriași pentru imobilul dvs</h3>
+        <p>
+            Aici va fi descrierea pentru acest serviciu și anume pentru serviciul de căutare chiriași pentru
+            imobilul dvs. Acest lucru îl realizăm prin publicarea de anunțuri pe site-urile de specialitate și pe
+            platforma noastră și ne ocupăm de relaționarea cu clienții pentru găsirea celei mai potrivite soluții.
+        </p>
+        <img src="/src/PozePaginaContract/1.png" alt="Căutăm chiriași" />
+    </section>
+
+    <section class="service">
+        <h3>2. Gestionăm imobilul</h3>
+        <p>
+            Aici va fi descrierea pentru acest serviciu și anume pentru serviciul de gestionare... pentru imobilul
+            dvs. Acest lucru îl realizăm prin publicarea de anunțuri pe site-urile de specialitate și pe platforma
+            noastră și ne ocupăm de relaționarea cu clienții pentru găsirea celei mai potrivite soluții.
+        </p>
+        <img src="/src/PozePaginaContract/2.png" alt="Gestionăm imobilul" />
+    </section>
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch('/HTML-reutilizabil/Header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('/HTML-reutilizabil/Footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+main img {
+    max-width: 100%;
+    width: 65%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: justify;
+    max-width: 600px;
+    font-size: 1.5rem;
+    margin-bottom: 2.5%;
+    margin-left: 10%;
+}
+
+main p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 20px auto;
+    margin-top: 3%;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 5%;
+}
+
+main h3 + h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #444;
+}
